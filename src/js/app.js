@@ -150,12 +150,15 @@ window.toggleStatus = async function (id, event) {
     if (newStatus === 'created') {
         // Sync to Google Sheets
         try {
-            const creative = findCreativeById(id);
+            const result = findCreativeById(id);
+            if (!result) throw new Error('Creatividad no encontrada');
+
+            const { creative, persona, phase } = result;
             const edits = Storage.getEdits()[id] || {};
             const rowData = [
                 creative.id,
-                currentPersona,
-                currentPhase,
+                persona,
+                phase,
                 edits.headline || creative.headline,
                 edits.subline || creative.subline,
                 edits.cta || creative.cta || 'Más info',
@@ -179,7 +182,10 @@ window.toggleStatus = async function (id, event) {
 window.copyBrief = function (id, event) {
     if (event) event.stopPropagation();
 
-    const creative = findCreativeById(id);
+    const result = findCreativeById(id);
+    if (!result) return;
+
+    const { creative, persona, phase } = result;
     const edits = Storage.getEdits()[id] || {};
 
     const h = edits.headline || creative.headline;
@@ -190,7 +196,7 @@ window.copyBrief = function (id, event) {
     const brief = `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 BRIEF CREATIVO [ID: ${id}]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🎯 PERSONA: ${currentPersona} | FASE: ${currentPhase}
+🎯 PERSONA: ${persona} | FASE: ${phase}
 ✍️ Headline: ${h}
 ✍️ Copy: ${s}
 ✍️ CTA: ${c}
@@ -215,13 +221,15 @@ window.manualSync = async function () {
     let successCount = 0;
     for (const id of createdIds) {
         try {
-            const creative = findCreativeById(id);
-            if (!creative) continue;
+            const result = findCreativeById(id);
+            if (!result) continue;
+
+            const { creative, persona, phase } = result;
             const edits = Storage.getEdits()[id] || {};
             const rowData = [
                 creative.id,
-                creative.persona || 'N/A',
-                creative.phase || 'N/A',
+                persona,
+                phase,
                 edits.headline || creative.headline,
                 edits.subline || creative.subline,
                 edits.cta || creative.cta || 'Más info',
@@ -293,13 +301,16 @@ function findCreativeById(id) {
     // Check in JSON
     for (const p in allData.personas) {
         for (const f in allData.personas[p]) {
-            if (f === 'copies') continue; // Skip metadata
+            if (f === 'id' || f === 'name' || f === 'description') continue; // Skip metadata
             const found = allData.personas[p][f].copies?.find(c => c.id === id);
-            if (found) return found;
+            if (found) return { creative: found, persona: p, phase: f };
         }
     }
     // Check in customs
-    return Storage.getCustomItems().find(c => c.id === id);
+    const customFound = Storage.getCustomItems().find(c => c.id === id);
+    if (customFound) return { creative: customFound, persona: customFound.persona || 'N/A', phase: customFound.phase || 'N/A' };
+
+    return null;
 }
 
 document.addEventListener('DOMContentLoaded', init);
