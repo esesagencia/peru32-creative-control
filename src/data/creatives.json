@@ -1,0 +1,694 @@
+{
+  "metadata": {
+    "project": "Perú 132 Alcoy - Creative Control System v2.0 CORREGIDO",
+    "version": "2.0",
+    "created": "2026-01-28",
+    "updated": "2026-01-28",
+    "format": "1080x1920 vertical (Instagram Stories/Reels)",
+    "note": "Copies actualizados con información real del dossier comercial y de precios"
+  },
+  "project_info": {
+    "name": "Residencial Perú 132",
+    "location": "Calle Perú 132, Alcoy",
+    "units": "5 viviendas exclusivas",
+    "unit_types": [
+      "VIV 1: 106,53 m² (3 dorm, 2 baños, terraza 16,30 m²)",
+      "VIV 2: 62,71 m² (2 dorm, 1 baño, balcón 2,70 m²)",
+      "VIV 3: 84,41 m² (3 dorm, 2 baños, terraza 9,43 m²)"
+    ],
+    "delivery": "2027 (aprox 18 meses construcción)",
+    "reservation": "5.000€",
+    "features": [
+      "Garaje y trastero incluido por vivienda",
+      "Aerotermia para ACS",
+      "Preinstalación climatización bomba de calor",
+      "Gres porcelánico",
+      "Carpintería PVC doble acristalamiento",
+      "Cocina equipada (horno, placa, campana)",
+      "Ascensor",
+      "Estructura metálica y forjados hormigón"
+    ],
+    "nearby": [
+      "Centro salud (3min)",
+      "IES Andreu Sempere",
+      "Colegio La Salle",
+      "Supermercado (5min)",
+      "Farmacia",
+      "Estación"
+    ]
+  },
+  "personas": {
+    "P3": {
+      "id": "P3",
+      "name": "Teletrabajador",
+      "age": "28-40 años",
+      "description": "Profesional que trabaja en remoto, busca ahorro y calidad de vida fuera de grandes ciudades",
+      "location": "Actualmente en Valencia/Alicante/Madrid",
+      "pain_points": [
+        "Precio alto de vivienda en ciudades grandes",
+        "Alquileres que consumen +40% del salario",
+        "Vida urbana sin sentido trabajando desde casa",
+        "Falta de contacto con naturaleza"
+      ],
+      "motivations": [
+        "Ahorro significativo",
+        "Mejor calidad de vida",
+        "Naturaleza cercana (Font Roja, Mariola)",
+        "Mismo trabajo, mejor entorno",
+        "Comunidad más tranquila"
+      ],
+      "budget_range": "Viviendas desde 62m² hasta 106m²",
+      "TOFU": {
+        "phase": "TOFU - Awareness",
+        "objective": "Captar atención con diferencial de ubicación, calidad de vida y proyecto exclusivo",
+        "hook": "Naturaleza, tranquilidad, obra nueva exclusiva en centro",
+        "copies": [
+          {
+            "id": "P3-TOFU-001",
+            "headline": "Teletrabaja desde el centro de Alcoy",
+            "subline": "Solo 5 viviendas. Garaje y trastero incluido. Tu oficina con vistas a la montaña.",
+            "cta": "Descubre el proyecto",
+            "visual_template": "T2",
+            "visual_description": "Persona trabajando en portátil en un espacio luminoso con grandes ventanales. Luz natural intensa, setup minimalista. De fondo, vistas desenfocadas de montañas (Sierra Mariola). Sensación de concentración y tranquilidad.",
+            "visual_suggestions": [
+              "Setup teletrabajo: laptop + monitor + luz natural",
+              "Vista de montañas al fondo (Mariola/Font Roja)",
+              "Ambiente: profesional pero relajado, sin estrés urbano"
+            ],
+            "overlay": "Overlay gradiente inferior 40% negro a transparente",
+            "text_position": "Inferior",
+            "design_notes": "Destacar 'Solo 5 viviendas' = exclusividad. Garaje incluido = valor añadido. Tono aspiracional pero realista.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P3-TOFU-002",
+            "headline": "5 viviendas. Una oportunidad única.",
+            "subline": "Obra nueva en el corazón de Alcoy. Garaje, trastero y aerotermia.",
+            "cta": "Ver planos",
+            "visual_template": "T1",
+            "visual_description": "Fondo sólido azul oscuro corporativo. Centro: número '5' grande y destacado con tipografía elegante. Debajo, icono minimalista de edificio. Diseño limpio, exclusivo, premium.",
+            "visual_suggestions": [
+              "Número '5' como elemento visual protagonista",
+              "Diseño: minimalista, premium, exclusividad",
+              "Color dorado para el '5' (#c4a47c)"
+            ],
+            "overlay": "N/A (fondo sólido)",
+            "text_position": "Centro",
+            "design_notes": "Enfoque en exclusividad del proyecto. '5 viviendas' = oportunidad única, no masificado. Tono premium sin ser pretencioso.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P3-TOFU-003",
+            "headline": "Alcoy, más cerca que nunca",
+            "subline": "50min Valencia. 40min Alicante. Naturaleza en tu puerta.",
+            "cta": "Ver ubicación",
+            "visual_template": "T6",
+            "visual_description": "Foto aérea de Alcoy integrado en naturaleza. Vista del casco urbano rodeado de montañas verdes (Mariola al fondo). Luz de atardecer cálida. Sensación de proximidad y accesibilidad.",
+            "visual_suggestions": [
+              "Vista aérea: Alcoy + entorno natural",
+              "Destacar: conexión con naturaleza + cercanía a ciudades",
+              "Ambiente: acogedor, accesible, no aislado"
+            ],
+            "overlay": "Overlay ligero 30%",
+            "text_position": "Centro-inferior",
+            "design_notes": "Romper objeción: 'Alcoy está lejos'. Mostrar tiempos reales. Naturaleza como valor positivo, no aislamiento.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P3-TOFU-004",
+            "headline": "Tu próxima casa ya tiene garaje",
+            "subline": "Perú 132: 5 viviendas con garaje y trastero incluido. Obra nueva 2027.",
+            "cta": "Quiero más info",
+            "visual_template": "T4",
+            "visual_description": "Render o foto de garaje privado limpio y moderno. Iluminación LED, espacio amplio. Coche aparcado (opcional). Sensación de comodidad y orden.",
+            "visual_suggestions": [
+              "Render: garaje privado del edificio",
+              "Ambiente: limpio, moderno, seguro",
+              "Detalle: plaza asignada por vivienda"
+            ],
+            "overlay": "Overlay oscuro 50%",
+            "text_position": "Centro",
+            "design_notes": "Diferencial: garaje incluido (no opcional). Público remoto valora parking propio. Tono práctico.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P3-TOFU-005",
+            "headline": "Naturaleza a 10 minutos. Centro a 2.",
+            "subline": "Perú 132: ubicación perfecta en el corazón de Alcoy.",
+            "cta": "Ver entorno",
+            "visual_template": "T5",
+            "visual_description": "Split layout: Arriba, paisaje de Font Roja o Mariola (naturaleza). Abajo, calle céntrica de Alcoy (vida urbana). Contraste equilibrado = mejor de ambos mundos.",
+            "visual_suggestions": [
+              "Split: naturaleza (Font Roja) + vida urbana (centro Alcoy)",
+              "Concepto: equilibrio, no sacrificas nada",
+              "Tono: aspiracional, vida ideal"
+            ],
+            "overlay": "No overlay. Split limpio",
+            "text_position": "Centro sobre línea divisoria",
+            "design_notes": "Propuesta de valor: tienes naturaleza Y servicios urbanos. No es pueblo aislado, es equilibrio perfecto.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P3-TOFU-006",
+            "headline": "¿Sigues pagando alquiler en la ciudad?",
+            "subline": "Paga tu propia casa en Alcoy por mucho menos. Obra nueva premium.",
+            "cta": "Calcular ahorro",
+            "visual_template": "T1",
+            "visual_description": "Gráfico comparativo simple o moneda rompiéndose. Fondo sólido color acento. Enfoque en ahorro financiero y libertad.",
+            "visual_suggestions": [
+              "Visual: gráfico de barras (Alquiler vs Hipoteca)",
+              "Concepto: ahorro, inversión, futuro",
+              "Estilo: infografía limpia"
+            ],
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P3-TOFU-007",
+            "headline": "Tu oficina tiene terraza de 16m²",
+            "subline": "Vivienda 1: 106m² con espacio para todo. Incluye garaje y trastero.",
+            "cta": "Ver Vivienda 1",
+            "visual_template": "T2",
+            "visual_description": "Persona trabajando con café en una terraza amplia y moderna. Plantas, sol, ambiente de bienestar total.",
+            "visual_suggestions": [
+              "Setup: laptop en mesa terraza",
+              "Ambiente: soleado, aire libre, lujo accesible",
+              "Detalle: planos de terraza visibles"
+            ],
+            "status": "pending",
+            "created_date": null
+          }
+        ]
+      },
+      "MOFU": {
+        "phase": "MOFU - Consideración",
+        "objective": "Mostrar proyecto real, especificaciones, viviendas concretas",
+        "hook": "Planos reales, calidades, proceso de reserva",
+        "copies": [
+          {
+            "id": "P3-MOFU-001",
+            "headline": "3 opciones. Desde 62m² hasta 106m².",
+            "subline": "Elige entre 2 o 3 dormitorios. Todas con garaje y trastero.",
+            "cta": "Ver planos",
+            "visual_template": "T3",
+            "visual_description": "Diseño infográfico limpio con las 3 tipologías de vivienda: VIV 1 (106m²), VIV 2 (62m²), VIV 3 (84m²). Iconos + números + distribución básica. Fondo claro, legible.",
+            "visual_suggestions": [
+              "Infografía: 3 viviendas con m² destacados",
+              "Iconos: 2 dorm vs 3 dorm",
+              "Diseño: claro, fácil de comparar"
+            ],
+            "overlay": "N/A (fondo claro)",
+            "text_position": "Superior + lista central",
+            "design_notes": "Información concreta y práctica. Facilitar comparativa rápida. Destacar que TODAS tienen garaje.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P3-MOFU-002",
+            "headline": "Aerotermia incluida",
+            "subline": "Máxima eficiencia energética. Ahorro en consumo desde el día 1.",
+            "cta": "Ver calidades",
+            "visual_template": "T2",
+            "visual_description": "Render interior: detalle de instalación moderna (termostato digital o equipo aerotermia). Ambiente tecnológico, eficiente. Luz natural.",
+            "visual_suggestions": [
+              "Render: termostato digital moderno",
+              "Detalle: equipo de aerotermia (visual técnico pero limpio)",
+              "Tono: tecnología, eficiencia, ahorro"
+            ],
+            "overlay": "Overlay gradiente 40%",
+            "text_position": "Inferior",
+            "design_notes": "Diferencial técnico. Público remoto valora eficiencia. Aerotermia = ahorro + sostenibilidad.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P3-MOFU-003",
+            "headline": "Ya visitaste nuestra web 👀",
+            "subline": "Reserva tu vivienda con 5.000€. Solo quedan 5 unidades.",
+            "cta": "Solicitar información",
+            "visual_template": "T4",
+            "visual_description": "Render exterior del edificio Perú 132 (fachada moderna, limpia). Overlay oscuro. Badge discreto: 'Solo 5 viviendas'.",
+            "visual_suggestions": [
+              "Render: fachada Perú 132 (si existe)",
+              "Badge: '5 viviendas disponibles'",
+              "Tono: exclusividad, no urgencia agresiva"
+            ],
+            "overlay": "Overlay 60%",
+            "text_position": "Centro",
+            "design_notes": "Retargeting. Emoji genera engagement. Cifra de reserva real (5.000€). Recordar escasez (5 viviendas).",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P3-MOFU-004",
+            "headline": "¿Quieres ver los planos?",
+            "subline": "Te enviamos toda la documentación por email. Sin compromiso.",
+            "cta": "Envíame el dossier",
+            "visual_template": "T1",
+            "visual_description": "Fondo verde corporativo. Centro: icono de email o documento estilizado. Diseño limpio, profesional.",
+            "visual_suggestions": [
+              "Icono: documento o email",
+              "Fondo: verde (#17a868)",
+              "Tono: accesible, sin presión"
+            ],
+            "overlay": "N/A (fondo sólido)",
+            "text_position": "Centro",
+            "design_notes": "CTA de bajo compromiso. Lead magnet: dossier completo. 'Sin compromiso' reduce fricción.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P3-MOFU-005",
+            "headline": "¿Sabes qué es la aerotermia?",
+            "subline": "Más que un sistema, es tu ahorro mensual. En Perú 132 cuidamos tu bolsillo y el planeta.",
+            "cta": "Saber más",
+            "visual_template": "T2",
+            "visual_description": "Detalle de termostato inteligente con interfaz moderna. Luz suave.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P3-MOFU-006",
+            "headline": "Comparativa: Vivienda 2 (62m²)",
+            "subline": "El espacio perfecto para empezar. 2 dorm y balcón. Garaje incluido.",
+            "cta": "Ver Vivienda 2",
+            "visual_template": "T3",
+            "visual_description": "Plano 2D o render 3D de la Vivienda 2 con cotas claras.",
+            "status": "pending",
+            "created_date": null
+          }
+        ]
+      },
+      "BOFU": {
+        "phase": "BOFU - Conversión",
+        "objective": "Cierre de reserva, proceso claro, urgencia suave",
+        "hook": "Reserva ahora, últimas unidades, proceso transparente",
+        "copies": [
+          {
+            "id": "P3-BOFU-001",
+            "headline": "Reserva con 5.000€",
+            "subline": "Proceso transparente. Garantía bancaria. Entrega 2027.",
+            "cta": "Quiero reservar",
+            "visual_template": "T1",
+            "visual_description": "Fondo azul corporativo. Centro: icono de escudo o checklist (seguridad, transparencia). Diseño institucional, confianza.",
+            "visual_suggestions": [
+              "Icono: escudo o checklist",
+              "Fondo: azul institucional",
+              "Tono: seguridad, transparencia, confianza"
+            ],
+            "overlay": "N/A (fondo sólido)",
+            "text_position": "Centro",
+            "design_notes": "Cifra real de reserva (5.000€). Destacar garantía bancaria = seguridad. Año entrega claro.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P3-BOFU-002",
+            "headline": "Solo 5 viviendas. No te quedes sin la tuya.",
+            "subline": "Perú 132. Proceso de adjudicación transparente y seguro.",
+            "cta": "Solicitar reserva",
+            "visual_template": "T4",
+            "visual_description": "Render exterior Perú 132 con overlay dramático (70%). Badge superior: 'Solo 5 viviendas'. Ambiente de exclusividad sin agresividad.",
+            "visual_suggestions": [
+              "Render: edificio completo",
+              "Badge: '5 viviendas únicas'",
+              "Tono: exclusividad, no presión"
+            ],
+            "overlay": "Overlay 70%",
+            "text_position": "Centro-inferior",
+            "design_notes": "Urgencia basada en escasez real (5 unidades). Destacar proceso transparente (diferencial del proyecto).",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P3-BOFU-003",
+            "headline": "¿Hablamos de tu vivienda?",
+            "subline": "Llámanos al 965 052 057 o escríbenos a peru132@grupoib10.es",
+            "cta": "Contactar ahora",
+            "visual_template": "T5",
+            "visual_description": "Split: Arriba, render interior acogedor. Abajo, bloque verde con datos de contacto claros y accesibles.",
+            "visual_suggestions": [
+              "Render: salón luminoso",
+              "Bloque contacto: teléfono + email destacados",
+              "Tono: cercano, accesible, humano"
+            ],
+            "overlay": "No overlay. Bloque verde inferior",
+            "text_position": "Bloque inferior",
+            "design_notes": "CTA directo: hablar. Contacto real y verificable. Tono cercano, no corporativo frío.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P3-BOFU-004",
+            "headline": "Entrega 2027. Reserva hoy.",
+            "subline": "Proceso garantizado. Selección de clientes. Solo 5 oportunidades.",
+            "cta": "Más información",
+            "visual_template": "T2",
+            "visual_description": "Render: construcción en proceso o plano arquitectónico superpuesto sobre imagen del edificio. Sensación de proyecto real y en marcha.",
+            "visual_suggestions": [
+              "Visual: plano técnico + render",
+              "Concepto: proyecto en marcha, no especulación",
+              "Tono: profesional, sólido"
+            ],
+            "overlay": "Overlay 40%",
+            "text_position": "Inferior",
+            "design_notes": "Fecha real entrega (2027). Destacar 'selección clientes' = comunidad cuidada. No es venta masiva.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P3-BOFU-005",
+            "headline": "Tu casa en Alcoy, el momento es ahora",
+            "subline": "Garantía bancaria, obra nueva premium y solo 5 unidades. ¿Hablamos?",
+            "cta": "Reservar cita",
+            "visual_template": "T1",
+            "visual_description": "Sello de confianza Grupo IB10 sobre fondo corporativo.",
+            "status": "pending",
+            "created_date": null
+          }
+        ]
+      }
+    },
+    "P5": {
+      "id": "P5",
+      "name": "Vuelta al Pueblo",
+      "age": "45-55 años",
+      "description": "Persona que vivió en Alcoy o alrededores y considera volver a sus raíces",
+      "location": "Actualmente en Valencia/Madrid/Barcelona o costa",
+      "pain_points": [
+        "Desconexión con origen",
+        "Vida urbana sin sentido en jubilación/prejubilación",
+        "Pérdida de contacto con familia/amigos de juventud",
+        "Nostalgia por calidad de vida"
+      ],
+      "motivations": [
+        "Reconexión con origen",
+        "Cercanía a familia/amigos",
+        "Tranquilidad",
+        "Calidad de vida recordada",
+        "Patrimonio para hijos"
+      ],
+      "budget_range": "Viviendas desde 62m² hasta 106m²",
+      "TOFU": {
+        "phase": "TOFU - Awareness",
+        "objective": "Activar nostalgia y reconexión emocional con Alcoy",
+        "hook": "Volver a casa, raíces, calidad de vida perdida",
+        "copies": [
+          {
+            "id": "P5-TOFU-001",
+            "headline": "Volver a casa es posible",
+            "subline": "Obra nueva en el centro de Alcoy. Tu ciudad te está esperando.",
+            "cta": "Descubre Perú 132",
+            "visual_template": "T6",
+            "visual_description": "Foto aérea nostálgica de Alcoy al atardecer. Luz dorada, casco urbano visible. Montañas (Mariola) al fondo. Sensación de hogar y pertenencia.",
+            "visual_suggestions": [
+              "Foto: Alcoy golden hour",
+              "Vista: ciudad integrada en naturaleza",
+              "Tono: nostálgico, cálido, acogedor"
+            ],
+            "overlay": "Overlay 30% con tinte cálido (sepia ligero)",
+            "text_position": "Centro",
+            "design_notes": "Hook emocional fuerte: 'Volver a casa'. Tono cálido refuerza nostalgia. No hablar de precio todavía.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P5-TOFU-002",
+            "headline": "¿Recuerdas cuando todo estaba cerca?",
+            "subline": "Alcoy sigue siendo tu ciudad. 5 viviendas nuevas en el centro.",
+            "cta": "Ver el proyecto",
+            "visual_template": "T2",
+            "visual_description": "Foto de calle emblemática de Alcoy: Plaza España, Sant Nicolau o similar. Gente paseando, comercios abiertos. Ambiente de barrio vivo pero tranquilo.",
+            "visual_suggestions": [
+              "Foto: calle céntrica Alcoy (reconocible)",
+              "Ambiente: barrio vivo, gente conocida",
+              "Tono: auténtico, cercano, familiar"
+            ],
+            "overlay": "Overlay gradiente 40%",
+            "text_position": "Inferior",
+            "design_notes": "Pregunta evoca recuerdos (técnica probada). 'Tu ciudad' = pertenencia. Destacar 'centro' = accesibilidad.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P5-TOFU-003",
+            "headline": "La montaña que tanto echas de menos",
+            "subline": "Font Roja. Mariola. Naturaleza en tu puerta. Alcoy.",
+            "cta": "Ver ubicación",
+            "visual_template": "T4",
+            "visual_description": "Paisaje de Font Roja o Mariola con overlay oscuro (50%). Senderos, naturaleza mediterránea. Sensación de libertad y conexión natural.",
+            "visual_suggestions": [
+              "Foto: Font Roja o Mariola (identificable)",
+              "Paisaje: senderos, pinos, naturaleza",
+              "Tono: libertad, nostalgia, aire libre"
+            ],
+            "overlay": "Overlay 50%",
+            "text_position": "Centro",
+            "design_notes": "Elemento diferencial: naturaleza cercana (10-15min). Conectar con recuerdos de excursiones familiares.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P5-TOFU-004",
+            "headline": "Alcoy tiene nuevas viviendas",
+            "subline": "Perú 132. Solo 5 unidades. Garaje y trastero incluido.",
+            "cta": "Conocer el proyecto",
+            "visual_template": "T1",
+            "visual_description": "Fondo: gradiente azul a verde. Centro: número '5' destacado + silueta minimalista de edificio. Diseño limpio, moderno, optimista.",
+            "visual_suggestions": [
+              "Número '5' protagonista",
+              "Gradiente: modernidad + naturaleza",
+              "Tono: progreso, oportunidad"
+            ],
+            "overlay": "N/A (fondo gradiente)",
+            "text_position": "Centro",
+            "design_notes": "Mensaje: Alcoy evoluciona positivamente. Obra nueva = calidad actual. '5 viviendas' = exclusividad.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P5-TOFU-005",
+            "headline": "Tu segunda oportunidad en Alcoy",
+            "subline": "Calle Perú 132. Obra nueva 2027. Solo 5 viviendas.",
+            "cta": "Más información",
+            "visual_template": "T5",
+            "visual_description": "Split: Arriba, foto antigua de Alcoy (años 80-90, efecto sepia). Abajo, render moderno Perú 132. Contraste pasado-presente.",
+            "visual_suggestions": [
+              "Foto antigua: Alcoy años 80-90 (si disponible)",
+              "Render: edificio nuevo",
+              "Concepto: entonces vs ahora, continuidad"
+            ],
+            "overlay": "Sepia arriba, limpio abajo",
+            "text_position": "Centro sobre línea",
+            "design_notes": "Narrativa temporal. 'Segunda oportunidad' = nuevo comienzo sin perder identidad. Visual potente.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P5-TOFU-006",
+            "headline": "Vivir el centro, como siempre",
+            "subline": "Perú 132: La comodidad de lo nuevo con el sabor de lo de toda la vida.",
+            "cta": "Descubrir proyecto",
+            "visual_template": "T2",
+            "visual_description": "Persona caminando por una calle peatonal del centro de Alcoy con bolsas de la compra o saludando a un vecino. Tono amable y comunitario.",
+            "visual_suggestions": [
+              "Escena: calle de Alcoy (ej. Sant Llorenç)",
+              "Ambiente: cotidiano, seguro, familiar",
+              "Estilo: fotografía de alta calidad, natural"
+            ],
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P5-TOFU-007",
+            "headline": "Un legado para tu familia",
+            "subline": "Asegura una vivienda premium en el centro de Alcoy. Solo 5 unidades.",
+            "cta": "Ver tipologías",
+            "visual_template": "T1",
+            "visual_description": "Manos de abuelo y nieto o detalle arquitectónico de alta calidad. Fondo elegante en tonos tierra.",
+            "visual_suggestions": [
+              "Visual: manos, conexión familiar",
+              "Concepto: patrimonio, futuro, pertenencia",
+              "Estilo: emocional y sobrio"
+            ],
+            "status": "pending",
+            "created_date": null
+          }
+        ]
+      },
+      "MOFU": {
+        "phase": "MOFU - Consideración",
+        "objective": "Mostrar proyecto concreto, practicidad de la vuelta",
+        "hook": "Especificaciones reales, vida cotidiana en Alcoy hoy",
+        "copies": [
+          {
+            "id": "P5-MOFU-001",
+            "headline": "2 o 3 habitaciones. Ascensor. Garaje.",
+            "subline": "Todo lo que necesitas. Perú 132, centro de Alcoy.",
+            "cta": "Ver planos",
+            "visual_template": "T2",
+            "visual_description": "Render interior: salón espacioso y luminoso. Distribución clara, práctica. Cocina integrada visible al fondo. Ambiente acogedor, sin excesos.",
+            "visual_suggestions": [
+              "Render: salón Perú 132",
+              "Enfoque: amplitud, luz, practicidad",
+              "Tono: hogareño, funcional"
+            ],
+            "overlay": "Overlay gradiente 50%",
+            "text_position": "Inferior",
+            "design_notes": "Info práctica. Público +45 valora funcionalidad. Ascensor = accesibilidad. Garaje = comodidad.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P5-MOFU-002",
+            "headline": "Todo cerca, como antes",
+            "subline": "Centro salud, colegio La Salle, IES Andreu Sempere. Tu vida facilitada.",
+            "cta": "Ver servicios",
+            "visual_template": "T3",
+            "visual_description": "Lista visual con iconos: salud, educación, comercio. Distancias aproximadas. Diseño infográfico limpio, fondo claro.",
+            "visual_suggestions": [
+              "Iconos: servicios + distancias",
+              "Diseño: claro, fácil lectura",
+              "Tono: práctico, informativo"
+            ],
+            "overlay": "N/A (fondo claro)",
+            "text_position": "Lista centrada",
+            "design_notes": "Información práctica esencial +45. Cercanía = autonomía. Servicios reales del entorno.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P5-MOFU-003",
+            "headline": "Entrega 2027. Garantías completas.",
+            "subline": "Reserva con garantía bancaria. Proceso transparente.",
+            "cta": "Solicitar info",
+            "visual_template": "T1",
+            "visual_description": "Fondo azul corporativo con icono de sello/certificado. Diseño institucional, profesional, confianza.",
+            "visual_suggestions": [
+              "Icono: certificado o sello garantía",
+              "Fondo: azul institucional",
+              "Tono: confianza, seriedad"
+            ],
+            "overlay": "N/A (fondo sólido)",
+            "text_position": "Centro",
+            "design_notes": "Tranquilidad = clave para +45. Garantía bancaria real. Año entrega concreto.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P5-MOFU-004",
+            "headline": "¿Quieres verlo en persona?",
+            "subline": "Visita sin compromiso. Te enseñamos planos y la zona.",
+            "cta": "Agendar visita",
+            "visual_template": "T4",
+            "visual_description": "Foto: profesional inmobiliario mostrando planos. Ambiente profesional pero cercano. Interacción humana visible.",
+            "visual_suggestions": [
+              "Foto: agente + cliente + planos",
+              "Ambiente: oficina profesional, cercana",
+              "Tono: humano, confianza"
+            ],
+            "overlay": "Overlay 30%",
+            "text_position": "Inferior",
+            "design_notes": "Público +45 prefiere contacto humano. 'Sin compromiso' reduce fricción. Visitar = conocer zona.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P5-MOFU-005",
+            "headline": "Tu familia también gana",
+            "subline": "Viviendas pensadas para el futuro. Patrimonio seguro en el centro de tu ciudad.",
+            "cta": "Pedir dossier",
+            "visual_template": "T1",
+            "visual_description": "Mesa de comedor con flores y luz de tarde. Ambiente de hogar sólido.",
+            "status": "pending",
+            "created_date": null
+          }
+        ]
+      },
+      "BOFU": {
+        "phase": "BOFU - Conversión",
+        "objective": "Cierre emocional + racional, decisión final",
+        "hook": "Patrimonio familiar, decisión inteligente, oportunidad única",
+        "copies": [
+          {
+            "id": "P5-BOFU-001",
+            "headline": "Un hogar para ti y para los tuyos",
+            "subline": "Patrimonio familiar en tu ciudad. Solo 5 viviendas disponibles.",
+            "cta": "Hablar con asesor",
+            "visual_template": "T2",
+            "visual_description": "Render: salón-comedor familiar amplio. Mesa preparada, luz cálida. Sensación de hogar y reunión. Acogedor sin recargo.",
+            "visual_suggestions": [
+              "Render: salón-comedor familiar",
+              "Ambiente: reunión, calidez, hogar",
+              "Luz: cálida, natural"
+            ],
+            "overlay": "Overlay 40%",
+            "text_position": "Inferior",
+            "design_notes": "Doble hook: emocional (hogar) + racional (patrimonio). 'Los tuyos' = familia. Escasez (5 viviendas).",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P5-BOFU-002",
+            "headline": "Reserva con 5.000€",
+            "subline": "Proceso transparente y seguro. Garantía bancaria incluida.",
+            "cta": "Consulta gratuita",
+            "visual_template": "T1",
+            "visual_description": "Fondo verde corporativo con icono de checklist o escudo. Diseño institucional, confianza.",
+            "visual_suggestions": [
+              "Icono: escudo o checklist",
+              "Fondo: verde (#17a868)",
+              "Tono: seguridad, transparencia"
+            ],
+            "overlay": "N/A (fondo sólido)",
+            "text_position": "Centro",
+            "design_notes": "Cifra real reserva (5.000€). Eliminar fricción: proceso claro. Garantía = tranquilidad.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P5-BOFU-003",
+            "headline": "Solo quedan 5 oportunidades",
+            "subline": "Perú 132. No dejes pasar la oportunidad de volver.",
+            "cta": "Reservar ahora",
+            "visual_template": "T4",
+            "visual_description": "Render exterior Perú 132 con overlay (70%). Badge '5 viviendas' discreto pero visible. Tono: oportunidad sin agresividad.",
+            "visual_suggestions": [
+              "Render: fachada edificio",
+              "Badge: '5 unidades' elegante",
+              "Tono: oportunidad única, no presión"
+            ],
+            "overlay": "Overlay 70%",
+            "text_position": "Centro",
+            "design_notes": "Urgencia suave (no agresiva +45). 'Volver' = emocional. Número concreto (5) = credibilidad.",
+            "status": "pending",
+            "created_date": null
+          },
+          {
+            "id": "P5-BOFU-004",
+            "headline": "Alcoy te espera de vuelta",
+            "subline": "Calle Perú 132. Tu ciudad, tu nueva casa.",
+            "cta": "Contactar",
+            "visual_template": "T6",
+            "visual_description": "Foto aérea Alcoy al amanecer o atardecer. Luz dramática pero esperanzadora. Ciudad integrada en naturaleza. Pertenencia.",
+            "visual_suggestions": [
+              "Foto aérea: Alcoy golden/blue hour",
+              "Ambiente: esperanza, comunidad",
+              "Luz: dramática, positiva"
+            ],
+            "overlay": "Overlay 40% tinte cálido",
+            "text_position": "Centro",
+            "design_notes": "Cierre 100% emocional. CTA más emocional: 'tu ciudad' en lugar de 'comprar'. Nostalgia como motor.",
+            "status": "pending",
+            "created_date": null
+          }
+        ]
+      }
+    }
+  }
+}

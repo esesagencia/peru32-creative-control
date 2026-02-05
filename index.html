@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perú 132 Alcoy | Control Panel v3.0</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/sidebar.css">
+    <link rel="stylesheet" href="src/css/cards.css">
+    <link rel="stylesheet" href="src/css/modal.css">
+</head>
+
+<body>
+    <aside>
+        <div class="side-logo">
+            <h1>PERÚ 132 ALCOY</h1>
+            <p style="font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.3em; font-weight: 800;">CREATIVE
+                MANAGER v3.0</p>
+        </div>
+
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-input" placeholder="Buscar por ID o copy..."
+                oninput="handleSearch(this.value)">
+        </div>
+
+        <div class="filter-group">
+            <h3>Buyer Persona</h3>
+            <div class="filter-options">
+                <label class="radio-btn active" onclick="setFilter('persona', 'P3', this)">
+                    <input type="radio" name="persona" checked>
+                    <span>P3: Teletrabajador</span>
+                </label>
+                <label class="radio-btn" onclick="setFilter('persona', 'P5', this)">
+                    <input type="radio" name="persona">
+                    <span>P5: Vuelta al Pueblo</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <h3>Fase de Campaña</h3>
+            <div class="filter-options">
+                <label class="radio-btn active" onclick="setFilter('phase', 'TOFU', this)">
+                    <input type="radio" name="phase" checked>
+                    <span>TOFU: Awareness</span>
+                </label>
+                <label class="radio-btn" onclick="setFilter('phase', 'MOFU', this)">
+                    <input type="radio" name="phase">
+                    <span>MOFU: Consideración</span>
+                </label>
+                <label class="radio-btn" onclick="setFilter('phase', 'BOFU', this)">
+                    <input type="radio" name="phase">
+                    <span>BOFU: Conversión</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <h3>Visibilidad</h3>
+            <div class="checkbox-group">
+                <label class="check-option">
+                    <input type="checkbox" id="show-pending" checked onchange="refreshList()">
+                    <span>Variantes Pendientes</span>
+                </label>
+                <label class="check-option">
+                    <input type="checkbox" id="show-created" checked onchange="refreshList()">
+                    <span>Variantes Creadas</span>
+                </label>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <header>
+            <div class="header-breadcrumb">
+                <span id="breadcrumb-text">P3 / TOFU</span>
+                <span id="view-count">Cargando creativas...</span>
+            </div>
+            <div class="header-actions">
+                <button class="btn btn-outline" onclick="collapseAll()">
+                    <span>⬆️</span> Colapsar Todo
+                </button>
+                <button class="btn btn-outline" onclick="openNewModal()">
+                    <span>➕</span> Nueva Variación
+                </button>
+                <button class="btn btn-primary" onclick="manualSync()">
+                    <span>⟳</span> Sync Sheets
+                </button>
+            </div>
+        </header>
+
+        <div id="creative-list-container">
+            <!-- Items injected by JS -->
+        </div>
+
+        <footer>
+            <div id="stats-summary">Total: 0 | Completadas: 0 (0%)</div>
+            <div id="sync-status">v3.0 - Ready</div>
+        </footer>
+    </main>
+
+    <!-- Modal para Nueva Variación -->
+    <div class="modal-overlay" id="new-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Añadir Nueva Variación</h2>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Persona</label>
+                    <select id="modal-persona">
+                        <option value="P3">P3: Teletrabajador</option>
+                        <option value="P5">P5: Vuelta al Pueblo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Fase</label>
+                    <select id="modal-phase">
+                        <option value="TOFU">TOFU: Awareness</option>
+                        <option value="MOFU">MOFU: Consideración</option>
+                        <option value="BOFU">BOFU: Conversión</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Headline (Copy Principal)</label>
+                <input type="text" id="modal-headline" placeholder="Ej: Tu oficina con vistas a la montaña">
+            </div>
+            <div class="form-group">
+                <label>Subline (Copy Secundario)</label>
+                <textarea id="modal-subline"
+                    style="width:100%; height:80px; background:var(--bg-dark); border:1px solid var(--border); border-radius:8px; color:white; padding:0.75rem; outline:none;"></textarea>
+            </div>
+            <div class="form-actions" style="display:flex; justify-content:flex-end; gap:1rem; margin-top:1rem;">
+                <button class="btn btn-outline" onclick="closeNewModal()">Cancelar</button>
+                <button class="btn btn-primary" onclick="saveNewCreative()">Guardar Variación</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toast-container"></div>
+
+    <script type="module" src="src/js/app.js"></script>
+</body>
+
+</html>
