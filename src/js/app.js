@@ -11,7 +11,7 @@ let searchQuery = '';
 async function init() {
     try {
         // Load data
-        const response = await fetch('src/data/creatives.json');
+        const response = await fetch('/data/creatives.json');
         if (!response.ok) throw new Error('No se pudo cargar el archivo de datos');
         allData = await response.json();
 
