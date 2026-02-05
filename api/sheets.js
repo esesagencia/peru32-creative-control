@@ -6,8 +6,8 @@ import { google } from 'googleapis';
 
 // Configurar Google Auth con Service Account
 function getGoogleAuth() {
-  const email = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
-  const key = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n');
+  const email = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL || process.env.G_EMAIL;
+  const key = (process.env.GOOGLE_PRIVATE_KEY || process.env.G_KEY)?.replace(/\\n/g, '\n');
 
   if (!email || !key) {
     throw new Error('Credenciales de Google no configuradas');
@@ -30,7 +30,7 @@ async function findRowByID(sheets, spreadsheetId, sheetName, creativeId) {
 
     const rows = response.data.values || [];
     const index = rows.findIndex((row, idx) => idx > 0 && row[0] === creativeId);
-    
+
     return index !== -1 ? index + 1 : null;
   } catch (error) {
     console.error('Error buscando fila:', error);
@@ -78,10 +78,10 @@ export default async function handler(req, res) {
       case 'update': {
         // Actualizar fila existente
         const { creativeId, rowData } = data;
-        
+
         // Buscar fila
         const rowNumber = await findRowByID(sheets, spreadsheetId, sheetName, creativeId);
-        
+
         if (!rowNumber) {
           // Si no existe, añadir nueva
           const appendResponse = await sheets.spreadsheets.values.append({
@@ -136,7 +136,7 @@ export default async function handler(req, res) {
       case 'create_sheet': {
         // Crear nuevo Google Sheet
         const { title } = data;
-        
+
         const response = await sheets.spreadsheets.create({
           resource: {
             properties: {
