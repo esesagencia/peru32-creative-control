@@ -56,6 +56,12 @@
     font-size: 0.8rem;
     transition: all 0.2s;
     background: transparent;
+    cursor: pointer;
+}
+
+.status-indicator:hover {
+    border-color: var(--primary);
+    background: rgba(196, 164, 124, 0.1);
 }
 
 .creative-item.created .status-indicator {

@@ -15,7 +15,7 @@ export function renderCreativeCard(copy, currentPersona, currentPhase) {
     item.innerHTML = `
         <div class="creative-item-header" onclick="window.toggleExpand('${copy.id}')">
             <div class="item-info">
-                <div class="status-indicator">${status === 'created' ? '✓' : ''}</div>
+                <div class="status-indicator" onclick="window.toggleStatus('${copy.id}', event)" title="Cambiar estado">${status === 'created' ? '✓' : ''}</div>
                 <span class="item-id">${copy.id}</span>
                 <span class="persona-tag" style="color: var(--${currentPersona === 'P3' ? 'p3' : 'p5'}-color)">${currentPersona}</span>
                 <span class="item-headline-preview" id="preview-${copy.id}">${headline}</span>
