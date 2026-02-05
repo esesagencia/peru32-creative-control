@@ -54,6 +54,7 @@ export default async function handler(req, res) {
     const sheets = google.sheets({ version: 'v4', auth });
 
     const { action, spreadsheetId, sheetName, data } = req.body;
+    console.log('API Request:', { action, spreadsheetId, sheetName });
 
     switch (action) {
       case 'append': {

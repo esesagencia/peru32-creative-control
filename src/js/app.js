@@ -203,8 +203,41 @@ BRIEF CREATIVO [ID: ${id}]
 };
 
 window.manualSync = async function () {
-    UI.showToast('🔄 Iniciando sincronización completa...', 'info');
-    // Implement full sync logic if needed, or simple feedback
+    UI.showToast('🔄 Sincronizando todos los estados...', 'info');
+    const statusObj = Storage.getStatus();
+    const createdIds = Object.keys(statusObj).filter(id => statusObj[id].status === 'created');
+
+    if (createdIds.length === 0) {
+        UI.showToast('No hay creatividades marcadas como creadas', 'warning');
+        return;
+    }
+
+    let successCount = 0;
+    for (const id of createdIds) {
+        try {
+            const creative = findCreativeById(id);
+            if (!creative) continue;
+            const edits = Storage.getEdits()[id] || {};
+            const rowData = [
+                creative.id,
+                creative.persona || 'N/A',
+                creative.phase || 'N/A',
+                edits.headline || creative.headline,
+                edits.subline || creative.subline,
+                edits.cta || creative.cta || 'Más info',
+                edits.visual_description || creative.visual_description || 'N/A',
+                creative.visual_template || 'Custom',
+                '✅ Creado',
+                statusObj[id].date,
+                ''
+            ];
+            await Storage.syncToGoogleSheets(id, rowData);
+            successCount++;
+        } catch (e) {
+            console.error(`Error sync manual para ${id}:`, e);
+        }
+    }
+    UI.showToast(`✅ ${successCount} items sincronizados`, 'success');
 };
 
 // Modals

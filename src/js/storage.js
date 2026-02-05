@@ -14,7 +14,7 @@ const STORAGE_KEYS = {
 };
 
 // API endpoint (se ajusta automáticamente según entorno)
-const API_URL = window.location.hostname === 'localhost' 
+const API_URL = window.location.hostname === 'localhost'
   ? 'http://localhost:3000/api'
   : '/api';
 
@@ -83,11 +83,12 @@ export function setCurrentProject(projectId) {
 
 export async function syncToGoogleSheets(creativeId, rowData) {
   const project = getCurrentProject();
-  
+
   if (!project || !project.sheetId) {
     throw new Error('Proyecto no configurado');
   }
 
+  console.log('Syncing to sheets:', { creativeId, API_URL });
   try {
     const response = await fetch(`${API_URL}/sheets`, {
       method: 'POST',
@@ -107,13 +108,15 @@ export async function syncToGoogleSheets(creativeId, rowData) {
 
     if (!response.ok) {
       const error = await response.json();
+      console.error('API Error Response:', error);
       throw new Error(error.error || 'Error al sincronizar');
     }
 
     const result = await response.json();
+    console.log('Sync Success:', result);
     return result;
   } catch (error) {
-    console.error('Error en syncToGoogleSheets:', error);
+    console.error('Fetch error in syncToGoogleSheets:', error);
     throw error;
   }
 }
@@ -161,7 +164,7 @@ export async function createNewProject(projectName, teamEmails = []) {
     // 3. Guardar proyecto en localStorage
     const projects = getProjects();
     const projectId = projectName.toLowerCase().replace(/\s+/g, '-');
-    
+
     projects[projectId] = {
       id: projectId,
       name: projectName,
@@ -184,7 +187,7 @@ export async function createNewProject(projectName, teamEmails = []) {
 
 export async function readSheetData() {
   const project = getCurrentProject();
-  
+
   if (!project || !project.sheetId) {
     throw new Error('Proyecto no configurado');
   }
